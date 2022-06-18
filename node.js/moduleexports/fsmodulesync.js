@@ -1,0 +1,5 @@
+const {readFileSync,writeFileSync}=require('fs')
+const first=readFileSync('node.js/moduleexports/pathmodule/first.txt','utf8')
+const second=readFileSync('node.js/moduleexports/pathmodule/second.txt','utf8')
+// console.log(first,second)
+writeFileSync(`node.js/moduleexports/pathmodule/result-sync.txt','hello this is the created file from fsmodule`,{flag:'a'})

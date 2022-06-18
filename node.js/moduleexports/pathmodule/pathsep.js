@@ -1,0 +1,8 @@
+const path=require('path')
+console.log(path.sep)
+const filejoin=path.join('/content','subcontent','test.txt')
+console.log(filejoin)
+const base=path.basename(filejoin)
+console.log(base)
+const absolute=path.resolve(__dirname,'content','subcontent','test.txt')
+console.log(absolute)
